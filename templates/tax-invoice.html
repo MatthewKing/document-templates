@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang=en>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Invoice #XXXX-XXXX - Matthew King</title>
+  <style>
+    .container {
+      display: flex;
+      padding-top: 3rem;
+    }
+
+    .document {
+      margin: auto;
+      width: 38rem;
+      padding: 3rem;
+      line-height: 1.5rem;
+      border: 1px solid #eee;
+      box-shadow: 0 0 10px rgba(0, 0, 0, .15);
+      font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif;
+      color: #555;
+    }
+
+    .row {
+      display: flex;
+      flex-flow: row wrap;
+      width: 100%;
+      padding-bottom: 2rem;
+    }
+
+    .left {
+      flex: 1;
+      text-align: left;
+    }
+
+    .right {
+      flex: 1;
+      text-align: right;
+    }
+
+    table {
+      width: 100%;
+      line-height: inherit;
+      text-align: left;
+    }
+
+    table thead th {
+      background: #eee;
+      padding: 5px;
+      border-bottom: 1px solid #ddd;
+      font-weight: bold;
+    }
+
+    table tbody td {
+      padding: 5px;
+      border-bottom: 1px solid #eee;
+    }
+
+    .value {
+      text-align: right;
+    }
+
+    .total {
+      text-align: right;
+      font-weight: 700;
+    }
+
+    @media only screen and (max-width: 600px) {
+      .container {
+        display: flex;
+        padding: 0.5rem;
+      }
+
+      .document {
+        padding: 1rem;
+      }
+
+      .row {
+        display: block;
+        padding-bottom: 0rem;
+      }
+
+      .left,
+      .right {
+        text-align: center;
+        padding-bottom: 2rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="document">
+      <div class="row">
+        <div class="left">
+          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABQCAMAAADY1yDdAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAB4UExURUdwTAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFBBkoMAAAAndFJOUwD7bxQF77j9AQKx0Cb5UUvX638pOAT2L5Mij8Td0l5d6WyJGpB8YoqKnvYAAAJpSURBVFjD7VntcoIwEAzIN6QCglRUbO1H3v8NWztVcxCS0+Sc6Uz3p16y5LJ7XAJjN6F4Lzkv3wtGh+SDix/wj4SM5Flc8ExEkT4JCU9EJDuZZJeSkDQCoCEheYUkryQkNSSp/+5KHrInSSlzlER2fIRPGDteOY5kZSV4OXO8BGQk/nUlPhXHIryShAv6IkxWhleeTOKtSEgiaMbojjpujFiKEZY3TdoeolCE0aCVZVCOSUp9/AAmLfLfUfsVTr4YGRf786Q/TUdRXUZVK5R8ETKWJ/1maXNp2D5Aydco43YvReUtO4Bhnyj5nsHnVj6AsGEkzAgn39vCI1bBNCPlq5dxAjewYjEcleDkq5dxCieNUSvxxSzUMq5GK0HsiUq+ehmPJ4XqOqLlq5XxEYQcoKSFyDZI+Wqq8SYDEXnLZHOesK4DnHznMhzUa7gjBahd51Z6iZOvWsbLHfw3Ly5VuOLhTM7m5auSMchUyKtoaGVpL7g6Z74wwldnii+mL6lMmbNmbSZZN8pMZab+8BTTpOytRnCcFv7G0iYb/arqMYNqMjYUaISTp1H3f71wil5ZcDq3JJ26oOcuOXJ8r3A/5roMYBVL8NkmI3NHkuGOUnaYP4hNrXIvdIekntYkjq3S6drknNYkTq2iP1G6sQo3HCgzWpM4tIrptsKFVcw3CT2tSZxZpTOfg3NakziyCubaxdYqHHXrktGaxIlVcFd6dlapkNdtPa1Jfq0SW6BDkrDUAuwfBN9irGGk2Gy92BLedmMg2bp4M24NuYpdkHj6LxKpk44oTv9JHJI8YuMfIuFvM1qvJZ6Y8QsWAjULCgBwkQAAAABJRU5ErkJggg==">
+        </div>
+        <div class="right">
+          <div><strong>TAX INVOICE</strong></div>
+          <div>Invoice #: XXXX-XXXX</div>
+          <div>Created: DD MMM YYYY</div>
+          <div>Due: DD MMM YYYY</div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="left">
+          <div>From: <strong>Matthew King</strong></div>
+          <div>ABN: XX XXX XXX XXX</div>
+          <div>Phone: (+XX) XXX XXX XXX</div>
+          <div>Email: email@address.com</div>
+        </div>
+        <div class="right">
+          <div>To: <strong>Client Name</strong></div>
+          <div>
+            123 Example Address<br />
+            City, State, PostCode
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <table>
+          <thead>
+            <tr>
+              <th>Description</th>
+              <th>Value</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Professional services (20 days at $1,000 per day)</td>
+              <td class="value">$20,000.00</td>
+            </tr>
+            <tr>
+              <td>GST</td>
+              <td class="value">$2,000.00</td>
+            </tr>
+            <tr>
+              <td class="total" colspan="2">Total payable: $22,000.00</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="row">
+        <table>
+          <thead>
+            <tr>
+              <th colspan="2">Payment details</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Bank</td>
+              <td>BANK</td>
+            </tr>
+            <tr>
+              <td>BSB</td>
+              <td>XXX-XXX</td>
+            </tr>
+            <tr>
+              <td>Account number</td>
+              <td>XXXXXXXX</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
